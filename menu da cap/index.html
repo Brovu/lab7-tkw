@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>MMultiple enu</title>
+  </head>
+  <body>
+    <div class="app">
+      <header id="header">
+        <img
+          class="header__logo"
+          src="./assets/img/Tin123Logo.png"
+          alt="Logo"
+        />
+        <div class="header__text">
+          <div class="header__title">TIN & HOC TIL</div>
+          <p class="header__para">&#62; Học theo cách từ xa của bạn &#60;</p>
+        </div>
+      </header>
+      <nav id="nav">
+        <h2 class="nav__name">123$Hoc</h2>
+        <div class="nav__menu">
+          <ul>
+            <li><a>Trang Chủ</a></li>
+            <li class="nav-select">
+              <a>Trắc nghiệm</a> <i class="fa fa-caret-down"></i>
+              <ul class="nav-list">
+                <li>Chứng chỉ cntt</li>
+                <li>Trắc nghiệm lập trình C</li>
+              </ul>
+            </li>
+            <li class="nav-select">
+              <a>Tin học Ứng Học CB</a> <i class="fa fa-caret-down"></i>
+              <ul class="nav-list">
+                <li>Word</li>
+                <li>Excel</li>
+                <li>Powerpoint</li>
+              </ul>
+            </li>
+            <li class="nav-select">
+              <a>Phân tích dữ liệu</a> <i class="fa fa-caret-down"></i>
+              <ul class="nav-list">
+                <li>Excel</li>
+                <li>Power BI</li>
+                <li>Tableau</li>
+              </ul>
+            </li>
+            <li><a>Thiết kế giao diện</a></li>
+            <li class="nav-select">
+              <a>Lập trình</a> <i class="fa fa-caret-down"></i>
+              <ul class="nav-list">
+                <li>Kho tài liệu học lập trình</li>
+                <li>Java</li>
+                <li>C/C++</li>
+                <li>STM32</li>
+              </ul>
+            </li>
+            <li class="nav-select">
+              <a>Tin học trẻ</a> <i class="fa fa-caret-down"></i>
+              <ul class="nav-list">
+                <li>Scratch</li>
+                <li>Tự động hóa & Robot</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <label for="check">
+          <i class="nav__icon fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" class="nav-check" id="check" />
+        <label for="check" class="nav__overlay"></label>
+        <label class="bars">
+          <label class="icon-close" for="check">
+            <i class="bars-close fa-solid fa-xmark"></i>
+          </label>
+          <ul>
+            <li><a href="" class="bars-list">Trang Chủ</a></li>
+            <li><a href="" class="bars-list">Trắc Nghiệm</a></li>
+            <li><a href="" class="bars-list">Tin Học CB</a></li>
+            <li><a href="" class="bars-list">Phân Tích dữ liệu</a></li>
+            <li><a href="" class="bars-list">Thiết kế giao diện</a></li>
+            <li><a href="" class="bars-list">Lập Trình</a></li>
+            <li><a href="" class="bars-list">Tin học trẻ</a></li>
+          </ul>
+        </label>
+      </nav>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+#header {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  border-top: 10px solid green;
+}
+
+.header__logo {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.header__title {
+  color: green;
+}
+
+.header__para {
+  color: #ccc;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #258d7ce0;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.nav__name {
+  color: #fff;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.nav__menu > ul {
+  position: relative;
+  color: #fff;
+  display: flex;
+  gap: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav__menu > ul > li > a:hover {
+  color: #ccc;
+}
+
+.nav__menu > ul > li > ul {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.nav__menu > ul > li > ul > li {
+  padding: 10px;
+}
+
+.nav__menu > ul > li > ul > li:hover {
+  background-color: #ccc;
+}
+
+.nav__icon {
+  font-size: 2rem;
+  color: #fff;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.bars {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  transform: translateX(100%);
+}
+
+.bars ul {
+  margin-top: 50px;
+}
+
+.bars-list {
+  color: #000;
+  padding: 10px;
+  margin-right: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bars ul li {
+  padding: 20px;
+}
+
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.bars-close {
+  font-size: 2rem;
+  padding-left: 10px;
+  color: red;
+  cursor: pointer;
+}
+
+.nav-check:checked ~ .bars-close {
+}
+
+.nav-check {
+  display: none;
+}
+
+.nav-check:checked ~ .nav__overlay {
+  display: block;
+}
+
+.nav-check:checked ~ .bars {
+  transform: translateX(0%);
+}
+
+.icon-close {
+  height: 32px;
+}

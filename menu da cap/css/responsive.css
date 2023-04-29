@@ -1,0 +1,25 @@
+@media (min-width: 740px) and (max-width: 1023px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__icon {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__icon {
+    display: none;
+  }
+
+  .bars {
+    display: none;
+  }
+}
+
+@media (max-width: 739px) {
+  .nav__menu {
+    display: none;
+  }
+}

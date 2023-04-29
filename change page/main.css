@@ -1,0 +1,23 @@
+.nav {
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  list-style: none;
+}
+
+.nav-items {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  margin-right: 2px;
+}
+
+.active {
+  background-color: aqua;
+}
+
+.display-none {
+  display: none;
+}
